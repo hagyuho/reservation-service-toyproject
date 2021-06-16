@@ -20,7 +20,6 @@ public class ReservationsApiController {
      */
 
 
-
     /**
      * @author      : hagyuho
      * @date        : 2021. 05. 21
@@ -38,9 +37,9 @@ public class ReservationsApiController {
      * @method      : canselReservation
      * @description : 예약취소
      */
-    @DeleteMapping("api/v1/reservations/{reservationId}")
-    public long cancel(@PathVariable Long reservationId, @RequestBody ReservationCancelRequestDto requestDto){
-        return reservationsService.cancel(reservationId, requestDto);
+    @DeleteMapping("api/v1/reservations/{id}")
+    public long cancel(@PathVariable Long id, @RequestBody ReservationCancelRequestDto requestDto){
+        return reservationsService.cancel(id, requestDto);
 
     }
 }

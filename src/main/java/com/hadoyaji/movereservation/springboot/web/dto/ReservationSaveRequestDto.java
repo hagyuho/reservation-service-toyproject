@@ -23,7 +23,7 @@ public class ReservationSaveRequestDto {
     public Reservations toEntity(){
         return Reservations.builder()
                 .moveDate(moveDate)
-                .reservationYn(reservationYn)
+                .reservationYn("Y")
                 .build();
     }
 

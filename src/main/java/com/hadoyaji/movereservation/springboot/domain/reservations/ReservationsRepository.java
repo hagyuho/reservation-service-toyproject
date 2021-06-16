@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ReservationsRepository extends JpaRepository<Reservations,Long> {
-    @Query("SELECT R FROM Reservations R ORDER BY R.reservationId DESC")
+    @Query("SELECT R FROM Reservations R ORDER BY R.id DESC")
     List<Reservations> findAllDesc();
 }

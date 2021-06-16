@@ -54,7 +54,7 @@ public class ReservationsService {
      */
     @Transactional
     public Long save(ReservationSaveRequestDto requestDto){
-        return reservationsRepository.save(requestDto.toEntity()).getReservationId();
+        return reservationsRepository.save(requestDto.toEntity()).getId();
     }
 
 
@@ -65,10 +65,11 @@ public class ReservationsService {
      * @description : 예약 취소 
      *                1. 예약여부 N 처리
      */
-    public long cancel(Long reservationId, ReservationCancelRequestDto requestDto) {
-        Reservations reservations = reservationsRepository.findById(reservationId).orElseThrow(()->new IllegalArgumentException("해당 예약정보가 없습니다. reservationId="+reservationId));
+    @Transactional
+    public long cancel(Long id, ReservationCancelRequestDto requestDto) {
+        Reservations reservations = reservationsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해당 예약정보가 없습니다. reservationId="+id));
         reservations.cancelReservations(requestDto.getCancelReason());
-        return reservationId;
+        return id;
     }
 
     /**

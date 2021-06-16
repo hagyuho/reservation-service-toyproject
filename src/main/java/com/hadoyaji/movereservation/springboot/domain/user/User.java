@@ -1,11 +1,14 @@
 package com.hadoyaji.movereservation.springboot.domain.user;
 
 import com.hadoyaji.movereservation.springboot.domain.BaseTimeEntity;
+import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -13,7 +16,7 @@ import javax.persistence.*;
 public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
+    private Long id;
 
     @Column(nullable = false)
     private String name;
@@ -25,6 +28,9 @@ public class User extends BaseTimeEntity {
 
     @Column(nullable = false)
     private String hpNumber;
+
+    @OneToMany(mappedBy = "user")
+    private List<Reservations> reservations = new ArrayList<>();
 
     @Builder
     public User(String name, String email, String picture, String hpNumber){

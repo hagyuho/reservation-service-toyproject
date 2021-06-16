@@ -14,7 +14,7 @@ public class Aparts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long apartId;
+    private long id;
 
     @Column(length = 4, nullable = false)
     private String dong;

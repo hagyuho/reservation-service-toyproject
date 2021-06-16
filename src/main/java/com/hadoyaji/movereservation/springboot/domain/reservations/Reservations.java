@@ -1,6 +1,8 @@
 package com.hadoyaji.movereservation.springboot.domain.reservations;
 
 import com.hadoyaji.movereservation.springboot.domain.BaseTimeEntity;
+import com.hadoyaji.movereservation.springboot.domain.aparts.Aparts;
+import com.hadoyaji.movereservation.springboot.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +17,7 @@ public class Reservations extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long reservationId;
+    private Long id;
 
     @Column(nullable = false)
     private LocalDateTime moveDate;
@@ -26,11 +28,18 @@ public class Reservations extends BaseTimeEntity {
     @Column
     private String cancelReason;
 
-//    @Column(nullable = false)
+//    @Column(name = "USER_ID", nullable = false)
 //    private Long userId;
-//
-//    @Column(nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="USER_ID")
+    private User user;
+
+//    @Column(name = "APART_ID",nullable = false)
 //    private Long apartId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="APART_ID")
+    private Aparts aparts;
+
 
 
     @Builder
