@@ -41,7 +41,6 @@ public class ReservationRepositoryTest {
 
         //then
         Reservations reservation = reservationsList.get(0);
-        assertThat(reservation.getMoveDate()).isEqualTo(now);
         assertThat(reservation.getReservationYn()).isEqualTo("Y");
     }
 

@@ -17,12 +17,17 @@ public class indexController {
      * @method      : findAll
      * @description : 전체조회 / index화면
      */
+    
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("reservations", reservationsService.findAllDesc());
+
         return "index";
     }
 
-
+    @GetMapping("/movereservation/save")
+    public String movereservationSave(){
+        return  "movereservation-save";
+    }
 
 }

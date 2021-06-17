@@ -15,19 +15,19 @@ var main = {
     },
     save : function () {
         var data = {
-            title: $('#title').val(),
-            author: $('#author').val(),
-            content: $('#content').val()
+            dong: $('#dong').val(),
+            ho: $('#ho').val(),
+            moveDate: $('#moveDate').val()
         };
 
         $.ajax({
             type: 'POST',
-            url: '/api/v1/posts',
+            url: '/api/v1/reservations',
             dataType: 'json',
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
         }).done(function() {
-            alert('글이 등록되었습니다.');
+            alert('예약처리가 완료되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));

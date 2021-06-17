@@ -26,7 +26,7 @@ public class ReservationsApiController {
      * @method      : saveReservation
      * @description : 예약처리
      */
-    @PostMapping("api/v1/reservations")
+    @PostMapping("/api/v1/reservations")
     public Long save(@RequestBody ReservationSaveRequestDto requestDto){
         return reservationsService.save(requestDto);
     }
@@ -37,7 +37,7 @@ public class ReservationsApiController {
      * @method      : canselReservation
      * @description : 예약취소
      */
-    @DeleteMapping("api/v1/reservations/{id}")
+    @DeleteMapping("/api/v1/reservations/{id}")
     public long cancel(@PathVariable Long id, @RequestBody ReservationCancelRequestDto requestDto){
         return reservationsService.cancel(id, requestDto);
 

@@ -1,8 +1,6 @@
 package com.hadoyaji.movereservation.springboot.web.dto;
 
-import com.hadoyaji.movereservation.springboot.domain.aparts.Aparts;
 import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
-import com.hadoyaji.movereservation.springboot.domain.user.User;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
@@ -18,9 +16,11 @@ public class ReservationListResponseDto {
 
     private String cancelReason;
 
-    private User user;
+    private long userId;
 
-    private Aparts aparts;
+    private long apartId;
+
+
 
     private LocalDateTime reservationDate;
 
@@ -29,8 +29,8 @@ public class ReservationListResponseDto {
         this.moveDate = entity.getMoveDate();
         this.reservationYn = entity.getReservationYn();
         this.cancelReason = entity.getCancelReason();
-        this.user = entity.getUser();
-        this.aparts = entity.getAparts();
+        this.userId = entity.getUser().getId();
+        this.apartId = entity.getAparts().getId();
         this.reservationDate = entity.getModifiedDate();
     }
 }

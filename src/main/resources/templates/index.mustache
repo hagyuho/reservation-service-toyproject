@@ -5,7 +5,7 @@
     <!--로그인 기능 영역 -->
     <div class="row">
         <div class="col-md-6">
-            <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+            <a href="/movereservation/save" role="button" class="btn btn-primary">글 등록</a>
         </div>
     </div>
     <br>
@@ -23,16 +23,16 @@
         </tr>
         </thead>
         <tbody id="tbody">
-        {{#reservationsService}}
+        {{#reservations}}
             <tr>
                 <td>{{reservationId}}</td>
-                <td>{{apartId}}</a></td>
+                <td>{{aparts}}</a></td>
                 <td>{{moveDate}}</td>
                 <td>{{reservationDate}}</td>
-                <td>{{userId}}</td>
+                <td>{{user}}</td>
                 <td>{{reservationYn}}</td>
             </tr>
-        {{/reservationsService}}
+        {{/reservations}}
         </tbody>
     </table>
 </div>
