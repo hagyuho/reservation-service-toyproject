@@ -4,14 +4,13 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
-
-        $('#btn-update').on('click', function () {
-            _this.update();
+        $('#btn-login').on('click', function () {
+            _this.login();
+        });
+        $('#btn-cancel').on('click', function () {
+            _this.cancel();
         });
 
-        $('#btn-delete').on('click', function () {
-            _this.delete();
-        });
     },
     save : function () {
         var data = {
@@ -33,42 +32,47 @@ var main = {
             alert(JSON.stringify(error));
         });
     },
-    update : function () {
+    login : function () {
         var data = {
-            title: $('#title').val(),
-            content: $('#content').val()
+            hpNumber: $('#hpNumber').val(),
+            dong: $('#dong').val(),
+            ho: $('#ho').val(),
+            role: $('#role').val()
         };
 
-        var id = $('#id').val();
-
         $.ajax({
-            type: 'PUT',
-            url: '/api/v1/posts/'+id,
+            type: 'POST',
+            url: '/api/v1/user',
             dataType: 'json',
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
         }).done(function() {
-            alert('글이 수정되었습니다.');
+            alert('로그인처리가 완료되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
     },
-    delete : function () {
-        var id = $('#id').val();
+    cancel : function () {
+        var data = {
+            cancelReason: $('#cancelReason').val()
+        };
+
+        var id = $('#reservationId').val();
 
         $.ajax({
             type: 'DELETE',
-            url: '/api/v1/posts/'+id,
+            url: '/api/v1/reservations/'+id,
             dataType: 'json',
-            contentType:'application/json; charset=utf-8'
+            contentType:'application/json; charset=utf-8',
+            data: JSON.stringify(data)
         }).done(function() {
-            alert('글이 삭제되었습니다.');
+            alert('예약이 취소되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
-    }
+    },
 
 };
 

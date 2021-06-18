@@ -1,5 +1,7 @@
 package com.hadoyaji.movereservation.springboot.web;
 
+import com.hadoyaji.movereservation.springboot.domain.aparts.Aparts;
+import com.hadoyaji.movereservation.springboot.domain.aparts.ApartsRepository;
 import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
 import com.hadoyaji.movereservation.springboot.domain.reservations.ReservationsRepository;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationCancelRequestDto;
@@ -35,6 +37,8 @@ public class ReservationsApiControllerTest {
     @Autowired
     private ReservationsRepository reservationsRepository;
 
+    @Autowired
+    private ApartsRepository apartsRepository;
 
 //    @Autowired
 //    private WebApplicationContext context;
@@ -59,9 +63,19 @@ public class ReservationsApiControllerTest {
         //given
         LocalDateTime moveDate = LocalDateTime.now();
         String reservationYn = "Y";
+        String dong = "101";
+        String ho = "201";
+
+        apartsRepository.save(Aparts.builder()
+                .dong(dong)
+                .ho(ho)
+                .build());
+
         ReservationSaveRequestDto requestDto = ReservationSaveRequestDto.builder()
                 .moveDate(moveDate)
                 .reservationYn(reservationYn)
+                .dong(dong)
+                .ho(ho)
                 .build();
 
         String url = "http://localhost:"+port+"/api/v1/reservations";
@@ -76,7 +90,9 @@ public class ReservationsApiControllerTest {
         //then
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).isGreaterThan(0L);
+
         List<Reservations> list = reservationsRepository.findAll();
+        assertThat(list.get(0).getAparts().getDong()).isEqualTo(dong);
         assertThat(list.get(0).getReservationYn()).isEqualTo(reservationYn);
     }
 

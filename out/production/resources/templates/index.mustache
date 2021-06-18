@@ -14,23 +14,26 @@
         <thead class="thead-strong">
         <tr>
             <th>예약번호</th>
-            <th>아파트정보</th>
+            <th>예약동</th>
+            <th>예약호수</th>
             <th>이사일자</th>
             <th>예약일자</th>
-            <th>예약일자</th>
-            <th>고객정보</th>
+            <th>고객전화번호</th>
             <th>예약진행여부</th>
+            <th></th>
         </tr>
         </thead>
         <tbody id="tbody">
         {{#reservations}}
             <tr>
                 <td>{{reservationId}}</td>
-                <td>{{aparts}}</a></td>
+                <td>{{dong}}</a></td>
+                <td>{{ho}}</a></td>
                 <td>{{moveDate}}</td>
                 <td>{{reservationDate}}</td>
-                <td>{{user}}</td>
+                <td>{{hpNumber}}</td>
                 <td>{{reservationYn}}</td>
+                <td><a href="/movereservation/cancel/{{reservationId}}" role="button" class="btn btn-primary">취소</a></td>
             </tr>
         {{/reservations}}
         </tbody>

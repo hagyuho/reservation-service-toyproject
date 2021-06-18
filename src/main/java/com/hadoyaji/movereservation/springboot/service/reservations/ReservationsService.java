@@ -1,9 +1,13 @@
 package com.hadoyaji.movereservation.springboot.service.reservations;
 
+import com.hadoyaji.movereservation.springboot.domain.aparts.Aparts;
+import com.hadoyaji.movereservation.springboot.domain.aparts.ApartsRepository;
 import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
 import com.hadoyaji.movereservation.springboot.domain.reservations.ReservationsRepository;
+import com.hadoyaji.movereservation.springboot.domain.user.UserRepository;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationCancelRequestDto;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationListResponseDto;
+import com.hadoyaji.movereservation.springboot.web.dto.ReservationResponseDto;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,6 +21,9 @@ import java.util.stream.Collectors;
 public class ReservationsService {
 
     private final ReservationsRepository reservationsRepository;
+    private final UserRepository userRepository;
+    private final ApartsRepository apartsRepository;
+
     /**
      * @author      : hagyuho
      * @date        : 2021. 06. 16
@@ -31,9 +38,14 @@ public class ReservationsService {
     /**
      * @author      : hagyuho
      * @date        : 2021. 05. 21
-     * @method      : findByHpNumber
-     * @description : 전화번호로 예약건 조회
+     * @method      : findById
+     * @description : 예약ID로 예약건 조회
      */
+    @Transactional(readOnly = true)
+    public ReservationResponseDto findById(Long id) {
+        Reservations entity =  reservationsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해당 예약정보가 없습니다. reservationId="+id));
+        return new ReservationResponseDto(entity);
+    }
 
     /**
      * @author      : hagyuho
@@ -47,21 +59,22 @@ public class ReservationsService {
     /**
      * @author      : hagyuho
      * @date        : 2021. 05. 21
-     * @method      : saveRsv
+     * @method      : save
      * @description : 예약처리
      *                1. 예약 전 체크
      *                2. 예약처리
      */
     @Transactional
     public Long save(ReservationSaveRequestDto requestDto){
-        return reservationsRepository.save(requestDto.toEntity()).getId();
+        Aparts aparts = apartsRepository.findByDongAndHo(requestDto.getDong(), requestDto.getHo());
+        return reservationsRepository.save(requestDto.toEntity(aparts)).getId();
     }
 
 
     /**
      * @author      : hagyuho
      * @date        : 2021. 05. 21
-     * @method      : cancelRsv
+     * @method      : cancel
      * @description : 예약 취소 
      *                1. 예약여부 N 처리
      */
@@ -71,6 +84,7 @@ public class ReservationsService {
         reservations.cancelReservations(requestDto.getCancelReason());
         return id;
     }
+
 
     /**
      * @author      : hagyuho

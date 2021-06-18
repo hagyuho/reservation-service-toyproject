@@ -1,14 +1,12 @@
 package com.hadoyaji.movereservation.springboot.domain.user;
 
 import com.hadoyaji.movereservation.springboot.domain.BaseTimeEntity;
-import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
+import com.hadoyaji.movereservation.springboot.domain.aparts.Aparts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -19,30 +17,19 @@ public class User extends BaseTimeEntity {
     private Long id;
 
     @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false)
-    private String email;
-
-    private String picture;
-
-    @Column(nullable = false)
     private String hpNumber;
 
-    @OneToMany(mappedBy = "user")
-    private List<Reservations> reservations = new ArrayList<>();
+    @ManyToOne
+    @JoinColumn(name="APART_ID")
+    private Aparts aparts;
 
     @Builder
-    public User(String name, String email, String picture, String hpNumber){
-        this.name = name;
-        this.email = email;
-        this.picture = picture;
+    public User(String hpNumber, Aparts aparts){
         this.hpNumber = hpNumber;
+        this.aparts = aparts;
     }
 
-    public User update(String name, String picture, String hpNumber){
-        this.name = name;
-        this.picture = picture;
+    public User update( String hpNumber){
         this.hpNumber = hpNumber;
         return this;
     }

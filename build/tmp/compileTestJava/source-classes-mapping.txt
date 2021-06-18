@@ -1,6 +1,0 @@
-com/hadoyaji/movereservation/springboot/domain/ReservationRepositoryTest.java
- com.hadoyaji.movereservation.springboot.domain.ReservationRepositoryTest
-com/hadoyaji/movereservation/springboot/web/ReservationsApiControllerTest.java
- com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest
-com/hadoyaji/movereservation/springboot/web/indexControllerTest.java
- com.hadoyaji.movereservation.springboot.web.indexControllerTest

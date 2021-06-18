@@ -28,25 +28,23 @@ public class Reservations extends BaseTimeEntity {
     @Column
     private String cancelReason;
 
-//    @Column(name = "USER_ID", nullable = false)
-//    private Long userId;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name="USER_ID")
     private User user;
 
-//    @Column(name = "APART_ID",nullable = false)
-//    private Long apartId;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name="APART_ID")
     private Aparts aparts;
 
 
 
     @Builder
-    public Reservations(String reservationYn, LocalDateTime moveDate, String cancelReason){
+    public Reservations(String reservationYn, LocalDateTime moveDate, String cancelReason, User user, Aparts aparts){
         this.reservationYn = reservationYn;
         this.moveDate = moveDate;
         this.cancelReason = cancelReason;
+        this.user = user;
+        this.aparts = aparts;
     }
 
 
