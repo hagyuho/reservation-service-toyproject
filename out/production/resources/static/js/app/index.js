@@ -4,8 +4,11 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
-        $('#btn-login').on('click', function () {
-            _this.login();
+        $('#btn-signup').on('click', function () {
+            _this.signup();
+        });
+        $('#btn-signin').on('click', function () {
+            _this.signin();
         });
         $('#btn-cancel').on('click', function () {
             _this.cancel();
@@ -32,11 +35,31 @@ var main = {
             alert(JSON.stringify(error));
         });
     },
-    login : function () {
+    signin : function () {
+         var data = {
+             hpNumber: $('#hpNumber').val(),
+             password: $('#password').val(),
+         };
+
+         $.ajax({
+             type: 'POST',
+             url: '/api/v1/user/signin',
+             dataType: 'json',
+             contentType:'application/json; charset=utf-8',
+             data: JSON.stringify(data)
+         }).done(function() {
+             alert('로그인이 완료되었습니다.');
+             window.location.href = '/';
+         }).fail(function (error) {
+             alert(JSON.stringify(error));
+         });
+    },
+    signup : function () {
         var data = {
             hpNumber: $('#hpNumber').val(),
             dong: $('#dong').val(),
             ho: $('#ho').val(),
+            password: $('#password').val(),
             role: $('#role').val()
         };
 
@@ -47,7 +70,7 @@ var main = {
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
         }).done(function() {
-            alert('로그인처리가 완료되었습니다.');
+            alert('회원가입처리가 완료되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));

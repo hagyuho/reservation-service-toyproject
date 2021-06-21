@@ -5,6 +5,7 @@ import com.hadoyaji.movereservation.springboot.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Getter
 @NoArgsConstructor
@@ -16,6 +17,7 @@ public class UserSaveRequestDto {
 
     @Builder
     public UserSaveRequestDto(String dong, String ho, String hpNumber){
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         this.dong=dong;
         this.ho=ho;
         this.hpNumber=hpNumber;

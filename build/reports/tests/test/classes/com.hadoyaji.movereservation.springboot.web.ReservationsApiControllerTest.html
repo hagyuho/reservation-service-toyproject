@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.hadoyaji.movereservation.springboot.web.html">com.hadoyaji.movereservation.springboot.web</a> &gt; ReservationsApiControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.006s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Reservations_예약처리</td>
+<td class="success">0.970s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reservations_취소처리</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:03:27.649 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:27.660 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:03:27.679 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:03:27.710 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:03:27.729 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest], using SpringBootContextLoader
+17:03:27.738 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]: class path resource [com/hadoyaji/movereservation/springboot/web/ReservationsApiControllerTest-context.xml] does not exist
+17:03:27.739 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]: class path resource [com/hadoyaji/movereservation/springboot/web/ReservationsApiControllerTestContext.groovy] does not exist
+17:03:27.740 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:03:27.741 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]: ReservationsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:03:27.815 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:27.980 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\move-reservation-webservice\build\classes\java\main\com\hadoyaji\movereservation\springboot\Application.class]
+17:03:27.981 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hadoyaji.movereservation.springboot.Application for test class com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest
+17:03:28.193 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]: using defaults.
+17:03:28.194 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:03:28.234 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7c9e3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@ac3e53, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@179b6a0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1a5e53e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a6135a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e5ef5b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@499211, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@430073, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@168e462, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e25563, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2d8db4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a94c5a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ef259, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ebe67a]
+17:03:28.237 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.238 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.239 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.239 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.241 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.241 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.242 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.242 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.256 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@fa57f3 testClass = ReservationsApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@78c15 testClass = ReservationsApiControllerTest, locations = '{}', classes = '{class com.hadoyaji.movereservation.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@130c197, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1950b56, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1a7bb6d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@130ac01], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+17:03:28.258 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.258 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest]
+17:03:28.267 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@fa57f3 testClass = ReservationsApiControllerTest, testInstance = com.hadoyaji.movereservation.springboot.web.ReservationsApiControllerTest@215cbe, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@78c15 testClass = ReservationsApiControllerTest, locations = '{}', classes = '{class com.hadoyaji.movereservation.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@130c197, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1950b56, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1a7bb6d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@130ac01], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+17:03:28.321 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2021-06-21 17:03:28.773  INFO 182888 --- [    Test worker] c.h.m.s.w.ReservationsApiControllerTest  : Starting ReservationsApiControllerTest on DESKTOP-HN3UIKG with PID 182888 (started by hagyu in C:\move-reservation-webservice)
+2021-06-21 17:03:28.774  INFO 182888 --- [    Test worker] c.h.m.s.w.ReservationsApiControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-21 17:03:30.499  INFO 182888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-06-21 17:03:30.666  INFO 182888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153ms. Found 3 repository interfaces.
+2021-06-21 17:03:31.512  INFO 182888 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f423fa48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-21 17:03:32.164  INFO 182888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-06-21 17:03:32.210  INFO 182888 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-21 17:03:32.211  INFO 182888 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-06-21 17:03:32.482  INFO 182888 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-21 17:03:32.482  INFO 182888 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3661 ms
+2021-06-21 17:03:32.907  INFO 182888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-21 17:03:33.221  INFO 182888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-21 17:03:33.436  INFO 182888 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-21 17:03:33.614  INFO 182888 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-06-21 17:03:33.618  INFO 182888 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-06-21 17:03:33.985  INFO 182888 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-06-21 17:03:34.347  INFO 182888 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Hibernate: alter table reservations drop foreign key FK15mrv8qorutq6o808fqvbwcti
+2021-06-21 17:03:35.964  WARN 182888 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL &quot;alter table reservations drop foreign key FK15mrv8qorutq6o808fqvbwcti&quot; via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL &quot;alter table reservations drop foreign key FK15mrv8qorutq6o808fqvbwcti&quot; via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1119) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:344) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:337) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:120) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.setBeanFactory(JpaTransactionManager.java:313) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1800) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1765) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:668) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.&lt;init&gt;(ServletContextInitializerBeans.java:85) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5132) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_181]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_181]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:456) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.&lt;init&gt;(TomcatWebServer.java:86) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) ~[na:na]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) ~[na:na]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_181]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) ~[na:na]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_181]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table &quot;RESERVATIONS&quot; not found; SQL statement:
+alter table reservations drop foreign key FK15mrv8qorutq6o808fqvbwcti [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.tableIfTableExists(Parser.java:7497) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.commandIfTableExists(Parser.java:7510) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseAlterTable(Parser.java:7277) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseAlter(Parser.java:6546) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:828) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 170 common frames omitted
+
+Hibernate: alter table reservations drop foreign key FKt0fnqb20ygbx0e030kdjlm28s
+2021-06-21 17:03:35.997  WARN 182888 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL &quot;alter table reservations drop foreign key FKt0fnqb20ygbx0e030kdjlm28s&quot; via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL &quot;alter table reservations drop foreign key FKt0fnqb20ygbx0e030kdjlm28s&quot; via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1119) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:344) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:337) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:120) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.setBeanFactory(JpaTransactionManager.java:313) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1800) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1765) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:668) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.&lt;init&gt;(ServletContextInitializerBeans.java:85) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5132) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_181]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_181]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:456) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.&lt;init&gt;(TomcatWebServer.java:86) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) ~[na:na]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) ~[na:na]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_181]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) ~[na:na]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_181]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table &quot;RESERVATIONS&quot; not found; SQL statement:
+alter table reservations drop foreign key FKt0fnqb20ygbx0e030kdjlm28s [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.tableIfTableExists(Parser.java:7497) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.commandIfTableExists(Parser.java:7510) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseAlterTable(Parser.java:7277) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseAlter(Parser.java:6546) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:828) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 170 common frames omitted
+
+Hibernate: alter table user drop foreign key FKckhgsg4qwf4lsdf9tr5fm43gt
+2021-06-21 17:03:36.037  WARN 182888 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL &quot;alter table user drop foreign key FKckhgsg4qwf4lsdf9tr5fm43gt&quot; via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL &quot;alter table user drop foreign key FKckhgsg4qwf4lsdf9tr5fm43gt&quot; via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1119) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:344) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:337) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.findEntityManagerFactory(EntityManagerFactoryUtils.java:120) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.setBeanFactory(JpaTransactionManager.java:313) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1800) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1765) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:668) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) [spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.&lt;init&gt;(ServletContextInitializerBeans.java:85) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5132) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_181]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_181]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:456) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.&lt;init&gt;(TomcatWebServer.java:86) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) ~[na:na]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) ~[na:na]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) ~[na:na]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_181]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) ~[na:na]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_181]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table &quot;USER&quot; not found; SQL statement:
+alter table user drop foreign key FKckhgsg4qwf4lsdf9tr5fm43gt [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.tableIfTableExists(Parser.java:7497) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.commandIfTableExists(Parser.java:7510) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseAlterTable(Parser.java:7277) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseAlter(Parser.java:6546) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:828) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 170 common frames omitted
+
+Hibernate: drop table if exists aparts
+Hibernate: drop table if exists reservations
+Hibernate: drop table if exists user
+Hibernate: create table aparts (id bigint not null, created_date datetime, modified_date datetime, dong varchar(4) not null, ho varchar(4) not null, primary key (id)) engine=InnoDB
+Hibernate: create table reservations (id bigint not null auto_increment, created_date datetime, modified_date datetime, cancel_reason varchar(255), move_date datetime not null, reservation_yn varchar(255) not null, apart_id bigint, user_id bigint, primary key (id)) engine=InnoDB
+Hibernate: create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, hp_number varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, apart_id bigint, primary key (id)) engine=InnoDB
+Hibernate: alter table reservations add constraint FK15mrv8qorutq6o808fqvbwcti foreign key (apart_id) references aparts (id)
+Hibernate: alter table reservations add constraint FKt0fnqb20ygbx0e030kdjlm28s foreign key (user_id) references user (id)
+Hibernate: alter table user add constraint FKckhgsg4qwf4lsdf9tr5fm43gt foreign key (apart_id) references aparts (id)
+2021-06-21 17:03:36.094  INFO 182888 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@14dd2bf'
+2021-06-21 17:03:36.103  INFO 182888 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-21 17:03:37.644  INFO 182888 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-06-21 17:03:38.435  WARN 182888 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-21 17:03:38.966  INFO 182888 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity&lt;springfox.documentation.spring.web.json.Json&gt; springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-06-21 17:03:39.524  INFO 182888 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71bc7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b02f75, org.springframework.security.web.header.HeaderWriterFilter@37c917, org.springframework.security.web.authentication.logout.LogoutFilter@9fe8e9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@a30749, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@da3764, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@105fb3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1deafd5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@119561, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9d9ce8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e000ed, org.springframework.security.web.session.SessionManagementFilter@184c1cb, org.springframework.security.web.access.ExceptionTranslationFilter@32f9be, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@219cfb]
+2021-06-21 17:03:40.267  INFO 182888 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:03:40.407  INFO 182888 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-21 17:03:41.307  INFO 182888 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-21 17:03:41.371  INFO 182888 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-21 17:03:41.432  INFO 182888 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-21 17:03:41.670  INFO 182888 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-06-21 17:03:41.707  INFO 182888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60053 (http) with context path ''
+2021-06-21 17:03:41.709  INFO 182888 --- [    Test worker] c.h.m.s.w.ReservationsApiControllerTest  : Started ReservationsApiControllerTest in 13.386 seconds (JVM running for 16.823)
+2021-06-21 17:03:41.849  INFO 182888 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2021-06-21 17:03:41.849  INFO 182888 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-21 17:03:41.869  INFO 182888 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+Hibernate: select aparts0_.id as id1_0_0_, aparts0_.created_date as created_2_0_0_, aparts0_.modified_date as modified3_0_0_, aparts0_.dong as dong4_0_0_, aparts0_.ho as ho5_0_0_ from aparts aparts0_ where aparts0_.id=?
+Hibernate: select aparts0_.id as id1_0_, aparts0_.created_date as created_2_0_, aparts0_.modified_date as modified3_0_, aparts0_.dong as dong4_0_, aparts0_.ho as ho5_0_ from aparts aparts0_ where aparts0_.dong=? and aparts0_.ho=?
+Hibernate: insert into reservations (created_date, modified_date, apart_id, cancel_reason, move_date, reservation_yn, user_id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select reservatio0_.id as id1_1_, reservatio0_.created_date as created_2_1_, reservatio0_.modified_date as modified3_1_, reservatio0_.apart_id as apart_id7_1_, reservatio0_.cancel_reason as cancel_r4_1_, reservatio0_.move_date as move_dat5_1_, reservatio0_.reservation_yn as reservat6_1_, reservatio0_.user_id as user_id8_1_ from reservations reservatio0_
+Hibernate: select aparts0_.id as id1_0_0_, aparts0_.created_date as created_2_0_0_, aparts0_.modified_date as modified3_0_0_, aparts0_.dong as dong4_0_0_, aparts0_.ho as ho5_0_0_ from aparts aparts0_ where aparts0_.id=?
+Hibernate: select reservatio0_.id as id1_1_, reservatio0_.created_date as created_2_1_, reservatio0_.modified_date as modified3_1_, reservatio0_.apart_id as apart_id7_1_, reservatio0_.cancel_reason as cancel_r4_1_, reservatio0_.move_date as move_dat5_1_, reservatio0_.reservation_yn as reservat6_1_, reservatio0_.user_id as user_id8_1_ from reservations reservatio0_
+Hibernate: select aparts0_.id as id1_0_0_, aparts0_.created_date as created_2_0_0_, aparts0_.modified_date as modified3_0_0_, aparts0_.dong as dong4_0_0_, aparts0_.ho as ho5_0_0_ from aparts aparts0_ where aparts0_.id=?
+Hibernate: delete from reservations where id=?
+2021-06-21 17:03:42.702  INFO 182888 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2021-06-21 17:03:42.703  INFO 182888 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-21 17:03:42.707  INFO 182888 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+Hibernate: insert into reservations (created_date, modified_date, apart_id, cancel_reason, move_date, reservation_yn, user_id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select reservatio0_.id as id1_1_0_, reservatio0_.created_date as created_2_1_0_, reservatio0_.modified_date as modified3_1_0_, reservatio0_.apart_id as apart_id7_1_0_, reservatio0_.cancel_reason as cancel_r4_1_0_, reservatio0_.move_date as move_dat5_1_0_, reservatio0_.reservation_yn as reservat6_1_0_, reservatio0_.user_id as user_id8_1_0_, aparts1_.id as id1_0_1_, aparts1_.created_date as created_2_0_1_, aparts1_.modified_date as modified3_0_1_, aparts1_.dong as dong4_0_1_, aparts1_.ho as ho5_0_1_, user2_.id as id1_2_2_, user2_.created_date as created_2_2_2_, user2_.modified_date as modified3_2_2_, user2_.apart_id as apart_id9_2_2_, user2_.email as email4_2_2_, user2_.hp_number as hp_numbe5_2_2_, user2_.name as name6_2_2_, user2_.picture as picture7_2_2_, user2_.role as role8_2_2_, aparts3_.id as id1_0_3_, aparts3_.created_date as created_2_0_3_, aparts3_.modified_date as modified3_0_3_, aparts3_.dong as dong4_0_3_, aparts3_.ho as ho5_0_3_ from reservations reservatio0_ left outer join aparts aparts1_ on reservatio0_.apart_id=aparts1_.id left outer join user user2_ on reservatio0_.user_id=user2_.id left outer join aparts aparts3_ on user2_.apart_id=aparts3_.id where reservatio0_.id=?
+Hibernate: update reservations set created_date=?, modified_date=?, apart_id=?, cancel_reason=?, move_date=?, reservation_yn=?, user_id=? where id=?
+Hibernate: select reservatio0_.id as id1_1_, reservatio0_.created_date as created_2_1_, reservatio0_.modified_date as modified3_1_, reservatio0_.apart_id as apart_id7_1_, reservatio0_.cancel_reason as cancel_r4_1_, reservatio0_.move_date as move_dat5_1_, reservatio0_.reservation_yn as reservat6_1_, reservatio0_.user_id as user_id8_1_ from reservations reservatio0_
+Hibernate: select reservatio0_.id as id1_1_, reservatio0_.created_date as created_2_1_, reservatio0_.modified_date as modified3_1_, reservatio0_.apart_id as apart_id7_1_, reservatio0_.cancel_reason as cancel_r4_1_, reservatio0_.move_date as move_dat5_1_, reservatio0_.reservation_yn as reservat6_1_, reservatio0_.user_id as user_id8_1_ from reservations reservatio0_
+Hibernate: delete from reservations where id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 2021. 6. 21 오후 5:03:48</p>
+</div>
+</div>
+</body>
+</html>
