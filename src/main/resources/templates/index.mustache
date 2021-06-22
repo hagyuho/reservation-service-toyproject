@@ -5,7 +5,7 @@
     <!--로그인 기능 영역 -->
     <div class="row">
         <div class="col-md-6">
-            <a href="/movereservation/save" role="button" class="btn btn-primary">글 등록</a>
+            <a href="/movereservation/save" role="button" class="btn btn-primary">예약 등록</a>
             {{#userName}}
                 Logged in as: <span id="user">{{userName}}</span>
                 <a href="/logout" class="btn btn-info active" role="button">Logout</a>
@@ -18,6 +18,7 @@
     </div>
     <br>
     <!-- 목록 출력 영역 -->
+    <h4>나의 예약목록</h4>
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
@@ -32,7 +33,7 @@
         </tr>
         </thead>
         <tbody id="tbody">
-        {{#reservations}}
+        {{#myReservations}}
             <tr>
                 <td>{{reservationId}}</td>
                 <td>{{dong}}</a></td>
@@ -42,6 +43,34 @@
                 <td>{{hpNumber}}</td>
                 <td>{{reservationYn}}</td>
                 <td><a href="/movereservation/cancel/{{reservationId}}" role="button" class="btn btn-primary">취소</a></td>
+            </tr>
+        {{/myReservations}}
+        </tbody>
+    </table>
+    <!-- 목록 출력 영역 -->
+    <h4>전체예약목록</h4>
+    <table class="table table-horizontal table-bordered">
+        <thead class="thead-strong">
+        <tr>
+            <th>예약번호</th>
+            <th>예약동</th>
+            <th>예약호수</th>
+            <th>이사일자</th>
+            <th>예약일자</th>
+            <th>고객전화번호</th>
+            <th>예약진행여부</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        {{#reservations}}
+            <tr>
+                <td>{{reservationId}}</td>
+                <td>{{dong}}</a></td>
+                <td>{{ho}}</a></td>
+                <td>{{moveDate}}</td>
+                <td>{{reservationDate}}</td>
+                <td>{{hpNumber}}</td>
+                <td>{{reservationYn}}</td>
             </tr>
         {{/reservations}}
         </tbody>

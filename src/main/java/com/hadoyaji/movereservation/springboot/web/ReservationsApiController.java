@@ -1,5 +1,7 @@
 package com.hadoyaji.movereservation.springboot.web;
 
+import com.hadoyaji.movereservation.springboot.config.auth.LoginUser;
+import com.hadoyaji.movereservation.springboot.config.auth.dto.SessionUser;
 import com.hadoyaji.movereservation.springboot.service.reservations.ReservationsService;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationCancelRequestDto;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationSaveRequestDto;
@@ -12,13 +14,6 @@ public class ReservationsApiController {
 
     private final ReservationsService reservationsService;
 
-    /**
-     * @author      : hagyuho
-     * @date        : 2021. 05. 21
-     * @method      : getReservationList
-     * @description : 예약목록조회
-     */
-
 
     /**
      * @author      : hagyuho
@@ -27,8 +22,8 @@ public class ReservationsApiController {
      * @description : 예약처리
      */
     @PostMapping("/api/v1/reservations")
-    public Long save(@RequestBody ReservationSaveRequestDto requestDto){
-        return reservationsService.save(requestDto);
+    public Long save(@RequestBody ReservationSaveRequestDto requestDto,@LoginUser SessionUser user){
+        return reservationsService.save(requestDto,user);
     }
 
     /**

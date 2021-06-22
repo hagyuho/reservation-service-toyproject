@@ -8,4 +8,6 @@ import java.util.List;
 public interface ReservationsRepository extends JpaRepository<Reservations,Long> {
     @Query("SELECT R FROM Reservations R ORDER BY R.id DESC")
     List<Reservations> findAllDesc();
+
+    List<Reservations> findByUserId(Long userId);
 }

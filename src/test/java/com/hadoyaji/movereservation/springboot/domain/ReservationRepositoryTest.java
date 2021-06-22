@@ -44,6 +44,7 @@ public class ReservationRepositoryTest {
         assertThat(reservation.getReservationYn()).isEqualTo("Y");
     }
 
+
     @Test
     public void BaseTimeEntity_등록(){
         //given

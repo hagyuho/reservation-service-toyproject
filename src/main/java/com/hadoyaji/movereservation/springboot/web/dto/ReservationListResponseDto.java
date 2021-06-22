@@ -31,7 +31,7 @@ public class ReservationListResponseDto {
         this.cancelReason = entity.getCancelReason();
         this.dong = entity.getAparts().getDong();
         this.ho = entity.getAparts().getHo();
-        this.hpNumber = entity.getUser().getHpNumber();
+        this.hpNumber = entity.getHpNumber();
         this.reservationDate = entity.getModifiedDate();
     }
 }

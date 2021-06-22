@@ -1,9 +1,11 @@
 package com.hadoyaji.movereservation.springboot.service.reservations;
 
+import com.hadoyaji.movereservation.springboot.config.auth.dto.SessionUser;
 import com.hadoyaji.movereservation.springboot.domain.aparts.Aparts;
 import com.hadoyaji.movereservation.springboot.domain.aparts.ApartsRepository;
 import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
 import com.hadoyaji.movereservation.springboot.domain.reservations.ReservationsRepository;
+import com.hadoyaji.movereservation.springboot.domain.user.User;
 import com.hadoyaji.movereservation.springboot.domain.user.UserRepository;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationCancelRequestDto;
 import com.hadoyaji.movereservation.springboot.web.dto.ReservationListResponseDto;
@@ -32,7 +34,19 @@ public class ReservationsService {
      */
     @Transactional(readOnly = true)
     public List<ReservationListResponseDto> findAllDesc(){
-        return reservationsRepository.findAllDesc().stream().map(reservations -> new ReservationListResponseDto(reservations)).collect(Collectors.toList());
+        return reservationsRepository.findAllDesc().stream().filter(p -> p.getReservationYn().equals("Y")).map(reservations -> new ReservationListResponseDto(reservations)).collect(Collectors.toList());
+    }
+
+    /**
+     * @author      : hagyuho
+     * @date        : 2021. 06. 16
+     * @method      : findByUserId
+     * @description : 내예약정보조회
+     */
+    public List<ReservationListResponseDto> findByUserId(String email) {
+        //Long userId = userRepository.findIdByEmail(email).getId();
+        User user = userRepository.findByEmail(email).orElseThrow(() -> new IllegalArgumentException("해당정보가 없습니다."));
+        return user.getReservations().stream().map(reservations -> new ReservationListResponseDto(reservations)).collect(Collectors.toList());
     }
 
     /**
@@ -47,28 +61,7 @@ public class ReservationsService {
         return new ReservationResponseDto(entity);
     }
 
-    /**
-     * @author      : hagyuho
-     * @date        : 2021. 05. 21
-     * @method      : getReservationList
-     * @description : 조회조건별 예약목록조회
-     *                1. 조회조건 존재하지 않을 시 전체조회
-     *                2. 조회조건 존재 할 시 해당 조건으로 조회
-     */
 
-    /**
-     * @author      : hagyuho
-     * @date        : 2021. 05. 21
-     * @method      : save
-     * @description : 예약처리
-     *                1. 예약 전 체크
-     *                2. 예약처리
-     */
-    @Transactional
-    public Long save(ReservationSaveRequestDto requestDto){
-        Aparts aparts = apartsRepository.findByDongAndHo(requestDto.getDong(), requestDto.getHo());
-        return reservationsRepository.save(requestDto.toEntity(aparts)).getId();
-    }
 
 
     /**
@@ -85,6 +78,20 @@ public class ReservationsService {
         return id;
     }
 
+    /**
+     * @author      : hagyuho
+     * @date        : 2021. 05. 21
+     * @method      : save
+     * @description : 예약처리
+     *                1. 예약 전 체크
+     *                2. 예약처리
+     */
+    @Transactional
+    public Long save(ReservationSaveRequestDto requestDto, SessionUser sessionUser){
+        Aparts aparts = apartsRepository.findByDongAndHo(requestDto.getDong(), requestDto.getHo());
+        User user = userRepository.findIdByEmail(sessionUser.getEmail());
+        return reservationsRepository.save(requestDto.toEntity(aparts,user)).getId();
+    }
 
     /**
      * @author      : hagyuho

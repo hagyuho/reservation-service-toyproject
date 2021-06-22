@@ -17,6 +17,7 @@ var main = {
     },
     save : function () {
         var data = {
+            hpNumber: $('#hpNumber').val(),
             dong: $('#dong').val(),
             ho: $('#ho').val(),
             moveDate: $('#moveDate').val()

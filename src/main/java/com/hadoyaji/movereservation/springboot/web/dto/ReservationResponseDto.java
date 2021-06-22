@@ -15,8 +15,10 @@ public class ReservationResponseDto {
 
     private String ho;
 
+    private String hpNumber;
 
     public ReservationResponseDto(Reservations entity){
+        this.hpNumber = entity.getHpNumber();
         this.reservationId = entity.getId();
         this.moveDate = entity.getMoveDate();
         this.dong = entity.getAparts().getDong();

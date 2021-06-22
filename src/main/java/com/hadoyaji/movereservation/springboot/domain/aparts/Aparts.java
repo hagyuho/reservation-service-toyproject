@@ -2,7 +2,6 @@ package com.hadoyaji.movereservation.springboot.domain.aparts;
 
 import com.hadoyaji.movereservation.springboot.domain.BaseTimeEntity;
 import com.hadoyaji.movereservation.springboot.domain.reservations.Reservations;
-import com.hadoyaji.movereservation.springboot.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,8 +27,6 @@ public class Aparts extends BaseTimeEntity {
     @Column(length = 4, nullable = false)
     private String ho;
 
-    @OneToMany(mappedBy = "aparts")
-    private List<User> users = new ArrayList<>();
 
     @OneToMany(mappedBy = "aparts")
     private List<Reservations> reservations = new ArrayList<>();

@@ -20,6 +20,9 @@ public class Reservations extends BaseTimeEntity {
     private Long id;
 
     @Column(nullable = false)
+    private String hpNumber;
+
+    @Column(nullable = false)
     private LocalDateTime moveDate;
 
     @Column(nullable = false)
@@ -29,22 +32,22 @@ public class Reservations extends BaseTimeEntity {
     private String cancelReason;
 
     @ManyToOne
-    @JoinColumn(name="USER_ID")
-    private User user;
-
-    @ManyToOne
     @JoinColumn(name="APART_ID")
     private Aparts aparts;
 
+    @ManyToOne
+    @JoinColumn(name="USER_ID")
+    private User user;
 
 
     @Builder
-    public Reservations(String reservationYn, LocalDateTime moveDate, String cancelReason, User user, Aparts aparts){
+    public Reservations(String hpNumber, String reservationYn, LocalDateTime moveDate, String cancelReason, User user, Aparts aparts){
+        this.hpNumber =hpNumber;
         this.reservationYn = reservationYn;
         this.moveDate = moveDate;
         this.cancelReason = cancelReason;
-        this.user = user;
         this.aparts = aparts;
+        this.user=user;
     }
 
 
