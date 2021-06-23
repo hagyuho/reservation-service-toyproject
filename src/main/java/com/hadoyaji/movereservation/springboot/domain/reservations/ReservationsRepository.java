@@ -3,6 +3,7 @@ package com.hadoyaji.movereservation.springboot.domain.reservations;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface ReservationsRepository extends JpaRepository<Reservations,Long> {
@@ -10,4 +11,7 @@ public interface ReservationsRepository extends JpaRepository<Reservations,Long>
     List<Reservations> findAllDesc();
 
     List<Reservations> findByUserId(Long userId);
+
+    List<Reservations> findAllByReservationYnAndMoveDateGreaterThanEqual(String reservationYn, LocalDateTime moveDate);
+
 }

@@ -25,6 +25,7 @@ public class ReservationsService {
     private final ReservationsRepository reservationsRepository;
     private final UserRepository userRepository;
     private final ApartsRepository apartsRepository;
+    private final ReservationCheckService reservationCheckService;
 
     /**
      * @author      : hagyuho
@@ -88,19 +89,13 @@ public class ReservationsService {
      */
     @Transactional
     public Long save(ReservationSaveRequestDto requestDto, SessionUser sessionUser){
+        boolean reservationCheck = reservationCheckService.reservationCheck(requestDto);
+        if(reservationCheck){
         Aparts aparts = apartsRepository.findByDongAndHo(requestDto.getDong(), requestDto.getHo());
         User user = userRepository.findIdByEmail(sessionUser.getEmail());
         return reservationsRepository.save(requestDto.toEntity(aparts,user)).getId();
+        }
+        else return 0L;
     }
-
-    /**
-     * @author      : hagyuho
-     * @date        : 2021. 05. 21
-     * @method      : rsvCheck
-     * @description : 예약 전 체크(내부)
-     *                1. 이사날짜 60일 이내 or 오늘 이전
-     *                2. 동일 동 && 동일 날짜 && 예약여부 Y
-     *                3. 동일연락처 && 예약여부 Y
-     */
 
 }
